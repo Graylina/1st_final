@@ -6,57 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href="proxima_nova_extrabold-webfont.woff2" rel="fonts">
+    <link href="HeuristicaItalic.woff" rel="fonts">
+    <link href="HeuristicaRegular.woff" rel="fonts">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
     <header id="header">
         <div class="wrapper">
-            <div class="header_container">
-                <div class="header_logo">KINGLY</div>
-                <div class="burger_header">
-                    <div class="burger-logo-menu"></div>
-                    <div class="burger-logo-menu"></div>
-                    <div class="burger-logo-menu"></div>
+            <div class="first_bg">
+                <div class="header_flex_container">
+                    <div class="header_logo">KINGLY</div>
+                    <a class="burger_header" href="#">
+                        <div class="burger-logo-menu"></div>
+                        <div class="burger-logo-menu"></div>
+                        <div class="burger-logo-menu"></div>
+                    </a>
+                </div>    
+                <div class="fist_section_container">
+                    <div class="buttons_with_arrows">
+                        <!-- Возможно придеться вставить first_section_text после to_left_button   -->
+                        <div class="to_left_button" ></div>
+                        <div class="to_right_button"></div>
+                    </div>
+                    <h1 class="first_section_title">THE JOURNEY</h1>
+                    <p class="first_section_text">Come take a walk with us and expore the city of Stockholm.</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="under_header_section"> 
-        <div class="wrapper">
-            <div class="fist_section_container">
-                <div class="buttons_with_arrows">
-                    <!-- Возможно придеться вставить first_section_text после to_left_button   -->
-                    <div class="to_left_button"></div>
-                    <div class="to_left_button"></div>
-                </div>
-                <h1 class="firts_section_title">THE JOURNEY</h1>
-                <p class="first_section_text">Come take a walk with us and expore the city of Stockholm.</p>
-            </div>
-        </div>
-    </section>
-
     <section class="second_section">
         <div class="wrapper">
-            <div class="second_section_container">
                 <h2 class="second_section_title">STOCKHOLM</h2>
-                <div class="article_second_section">
-                    <p>WNITER</p>
-                    <p>Merops pusillus</p>
-                    <p>
-                        Lorem ipsum dolor sit amet,<br>
-                        sapi aqua sollicitudin, eu<br>
-                        consequatur, liberoma id nisl,<br>
-                        blandit dui. Accumsan iaculis.<br>
-                        In felis et. In mi, at nullam
-                    </p>
-                </div>
-                <a class="more_button">MORE</a>
-                <div class="calendar">
-                    <div class="prev_month_button"></div>
-                    <p class="month_name">MARCH 2015</p>
-                    <div class="prev_month_button"></div>
-                    <!-- вставить календарь -->
+                <div class="second_section_container">
+                    <div class="article_second_section">
+                        <p class="title_second_section">WNITER</p>
+                        <p class="under_article_second_section">Merops pusillus</p>
+                        <p class="text_second_section">
+                            Lorem ipsum dolor sit amet,<br>
+                            sapi aqua sollicitudin, eu<br>
+                            consequatur, liberoma id nisl,<br>
+                            blandit dui. Accumsan iaculis.<br>
+                            In felis et. In mi, at nullam
+                        </p>
+                        <a class="more_button" href="#">MORE</a>
+                    </div>
+                    <div class="calendar">
+                            <div class="month"> 
+                                    <ul>
+                                    <li class="prev"></li>
+                                    <li class="next"></li>
+                                    <div class="month_name">March 2015</div>                                    </ul>
+                                </div>
+                                
+                                <ul class="weekdays">
+                                    <li>M</li>
+                                    <li>T</li>
+                                    <li>W</li>
+                                    <li>T</li>
+                                    <li>F</li>
+                                    <li>S</li>
+                                    <li>S</li>
+                                </ul>
+                                
+                                <ul class="days"> 
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>10</li>
+                                        <li class="holiday">11</li>
+                                        <li>12</li>
+                                        <li>13</li>
+                                        <li>14</li>
+                                        <li>15</li>
+                                        <li>16</li>
+                                        <li>17</li>
+                                        <li>18</li>
+                                        <li>19</li>
+                                        <li>20</li>
+                                        <li>21</li>
+                                        <li>22</li>
+                                        <li>23</li>
+                                        <li><span class="active">24</span></li>
+                                        <li>25</li>
+                                        <li>26</li>
+                                        <li>27</li>
+                                        <li>28</li>
+                                        <li>29</li>
+                                        <li>30</li>
+                                        <li>31</li>
+                                        </ul>
+                </div>        
+                        </ul>
                 </div>
             </div>
         </div>
@@ -65,64 +118,71 @@
     <section class="third_section">
         <div class="wrapper">
             <div class="third_section_container">
-                <p class="large_l">L</p>
-                <p class="article_third_container">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aliquam quis euismod quam. Fusce at tincidunt puruss.
-                        Nam vehicula ut neque eu elementum. Phasellus dapib
-                        us lobortis ornare. Suspendisse aliquam aliquet sdf fsfd
-                        vulputate. Cras volutpat, nibh et euismod ultricies, libero
-                        lorem sodales odio, a fermentum ante quam eu purus. we
-                        Cras euismod accumsan egestas. Nulla sit amet dolor leo.
-                        Ut lorem lacus, rutrum in efficitur eget, convallis sed erat.
-                        Phasellus varius enim eget est iaculis pretium. Etiam id 
-                        ante congue, scelerisque tellus id bibendum est.
-                </p>
-                <p clas="article_third_container">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aliquam quis euismod quam. Fusce at tincidunt puruss.
-                        Nam vehicula ut neque eu elementum. Phasellus dapib
-                        us lobortis ornare. Suspendisse aliquam aliquet sdf fsfd
-                        vulputate. Cras volutpat, nibh et euismod ultricies, libero
-                        lorem sodales odio, a fermentum ante quam eu purus. we
-                        Cras euismod accumsan egestas. Nulla sit amet dolor leo.
-                        Ut lorem lacus, rutrum in efficitur eget, convallis sed erat.
-                        Phasellus varius enim eget est iaculis pretium. Etiam id 
-                        ante congue, scelerisque tellus id bibendum est.
+                <div class="large_l">L</div>
+                <div class=third_article_container>
+                            <div class="article_third_container">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aliquam quis euismod quam. Fusce at tincidunt puruss.
+                                Nam vehicula ut neque eu elementum. Phasellus dapib
+                                us lobortis ornare. Suspendisse aliquam aliquet sdf fsfd
+                                vulputate. Cras volutpat, nibh et euismod ultricies, libero
+                                lorem sodales odio, a fermentum ante quam eu purus. we
+                                Cras euismod accumsan egestas. Nulla sit amet dolor leo.
+                                Ut lorem lacus, rutrum in efficitur eget, convallis sed erat.
+                                Phasellus varius enim eget est iaculis pretium. Etiam id 
+                                ante congue, scelerisque tellus id bibendum est.
+                                </p>
+                            </div>
+                            <div class="article_third_container">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aliquam quis euismod quam. Fusce at tincidunt puruss.
+                                    Nam vehicula ut neque eu elementum. Phasellus dapib
+                                    us lobortis ornare. Suspendisse aliquam aliquet sdf fsfd
+                                    vulputate. Cras volutpat, nibh et euismod ultricies, libero
+                                    lorem sodales odio, a fermentum ante quam eu purus. we
+                                    Cras euismod accumsan egestas. Nulla sit amet dolor leo.
+                                    Ut lorem lacus, rutrum in efficitur eget, convallis sed erat.
+                                    Phasellus varius enim eget est iaculis pretium. Etiam id 
+                                    ante congue, scelerisque tellus id bibendum est.
+                                    </p>
 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aliquam quis euismod quam. Fusce at tincidunt puruss.
-                        Nam vehicula ut neque eu elementum. Phasellus dapib
-                        us lobortis ornare. Suspendisse aliquam aliquet sdf fsfd
-                        vulputate. Cras volutpat, nibh et euismod ultricies, libero
-                        lorem sodales odio, a fermentum ante quam eu purus. we
-                        Cras euismod accumsan egestas. Nulla sit amet dolor leo.
-                        Ut lorem lacus, rutrum in efficitur eget, convallis sed erat.
-                        Phasellus varius enim eget est iaculis pretium. Etiam id 
-                        ante congue, scelerisque tellus id bibendum est.
-                </p>
-                <p class="article_third_container">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aliquam quis euismod quam. Fusce at tincidunt puruss.
-                        Nam vehicula ut neque eu elementum. Phasellus dapib
-                        us lobortis ornare. Suspendisse aliquam aliquet sdf fsfd
-                        vulputate. Cras volutpat, nibh et euismod ultricies, libero
-                        lorem sodales odio, a fermentum ante quam eu purus. we
-                        Cras euismod accumsan egestas. Nulla sit amet dolor leo.
-                        Ut lorem lacus, rutrum in efficitur eget, convallis sed erat.
-                        Phasellus varius enim eget est iaculis pretium. Etiam id
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aliquam quis euismod quam. Fusce at tincidunt puruss.
+                                    Nam vehicula ut neque eu elementum. Phasellus dapib
+                                    us lobortis ornare. Suspendisse aliquam aliquet sdf fsfd
+                                    vulputate. Cras volutpat, nibh et euismod ultricies, libero
+                                    lorem sodales odio, a fermentum ante quam eu purus. we
+                                    Cras euismod accumsan egestas. Nulla sit amet dolor leo.
+                                    Ut lorem lacus, rutrum in efficitur eget, convallis sed erat.
+                                    Phasellus varius enim eget est iaculis pretium. Etiam id 
+                                    ante congue, scelerisque tellus id bibendum est.
+                                    </p>
+                            </div> 
+                            
+                            <div class="article_third_container">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aliquam quis euismod quam. Fusce at tincidunt puruss.
+                                    Nam vehicula ut neque eu elementum. Phasellus dapib
+                                    us lobortis ornare. Suspendisse aliquam aliquet sdf fsfd
+                                    vulputate. Cras volutpat, nibh et euismod ultricies, libero
+                                    lorem sodales odio, a fermentum ante quam eu purus. we
+                                    Cras euismod accumsan egestas. Nulla sit amet dolor leo.
+                                    Ut lorem lacus, rutrum in efficitur eget, convallis sed erat.
+                                    Phasellus varius enim eget est iaculis pretium. Etiam id</p>
 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aliquam quis euismod quam. Fusce at tincidunt puruss.
-                        Nam vehicula ut neque eu elementum. Phasellus dapib
-                        us lobortis ornare. Suspendisse aliquam aliquet sdf fsfd
-                        vulputate. Cras volutpat, nibh et euismod ultricies, libero
-                        lorem sodales odio, a fermentum ante quam eu purus. we
-                        Cras euismod accumsan egestas. Nulla sit amet dolor leo.
-                        Ut lorem lacus, rutrum in efficitur eget, convallis sed erat.
-                        Phasellus varius enim eget est iaculis pretium. Etiam id 
-                        ante congue, scelerisque tellus id bibendum est.
-                </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Aliquam quis euismod quam. Fusce at tincidunt puruss.
+                                    Nam vehicula ut neque eu elementum. Phasellus dapib
+                                    us lobortis ornare. Suspendisse aliquam aliquet sdf fsfd
+                                    vulputate. Cras volutpat, nibh et euismod ultricies, libero
+                                    lorem sodales odio, a fermentum ante quam eu purus. we
+                                    Cras euismod accumsan egestas. Nulla sit amet dolor leo.
+                                    Ut lorem lacus, rutrum in efficitur eget, convallis sed erat.
+                                    Phasellus varius enim eget est iaculis pretium. Etiam id 
+                                    ante congue, scelerisque tellus id bibendum est.
+                                    </p>
+                                </div> 
+                </div>               
             </div>
         </div>
     </section>
@@ -137,35 +197,53 @@
         <div class="wrapper">
             <div class="fifth_section_container">
                 <h2 class="fifth_section_title">THE PEOPLE</h2>
-                <div class="stockholm_article_container">
-                    <p class="stockholm_article_title">STOCKHOLM</p>
-                    <div class="under_article_border"></div>
-                    <p class="stockholm_article_title">Most impressive travel<br>
-                        destination for 2015</p>
-                    <p class="stockholm_article_text">Lorem ipsum dolor sit amet, sapi aqua<br>
-                        sollicitudin, eu consequatur, liberoma id<br>
-                        nisl, blandit dui. Accumsan iaculis. In<br>
-                        felis et. In mi, at nullam bibendum. At</p>
-                </div>
-                <div class="right_part">
-                    <div class="under_right_border"></div>
-                    <p>HOW TO EXPANDINTERNATIONALY</p>
-                    <div class="comments">25</div>
-                    <div class="date">Jan,2015</div>
-                </div>
             </div>
+        </div>
+    </section>
+
+    <section class="two_parts">
+        <div class="wrapper">
+                <div class="two_parts_container">
+                        <div class="stockholm_article_container">
+                            <p class="stockholm_article_title">STOCKHOLM</p>
+                            <div class="under_article_border"></div>
+                            <p class="stockholm_article_title_under">Most impressive travel<br>
+                                destination for 2015</p>
+                            <p class="stockholm_article_text"><div class="start">Lorem ipsum</div> 
+                                dolor sit amet, sapi aqua<br>
+                                sollicitudin, eu consequatur, liberoma id<br>
+                                nisl, blandit dui. Accumsan iaculis. In<br>
+                                felis et. In mi, at nullam bibendum. At</p>
+                        </div>
+                        <div class="right_part">
+                            <div class="under_right_border"></div>
+                            <p class="right_part_title">HOW TO EXPAND<br>
+                                INTERNATIONALY</p>
+                            <div class="comments">25</div>
+                            <div class="date">Jan,2015</div>
+                        </div>
+                    </div>
         </div>
     </section>
     <footer id="footer">
         <div class="wrapper">
             <div class="footer_container">
                 <h2 class="footer_title">TRAVEL WITH US</h2>
-                <a class="facebook_button">FACEBOOK</a>
-                <a class="twitter_button">TWITTER</a>
-                <p class="footer_copyright">Copyright 2015. Hand made in Sweden by <a url="#">KINGLY</a>.</p>
+                <div class="footer_buttons_container">
+                    <a class="facebook_button">FACEBOOK</a>
+                    <a class="twitter_button">TWITTER</a>
+                </div>
+                <p class="footer_copyright">Copyright 2015. Hand made in Sweden by <a href="#" class="kingly_link">KINGLY</a>.</p>
             </div>
         </div>
     </footer>
     
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+				
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </body>
 </html>
