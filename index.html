@@ -29,13 +29,10 @@
                     </a>
                 </div>    
                 <div class="fist_section_container">
-                    <div class="buttons_with_arrows">
-                        <!-- Возможно придеться вставить first_section_text после to_left_button   -->
-                        <div class="to_left_button" ></div>
-                        <div class="to_right_button"></div>
-                    </div>
                     <h1 class="first_section_title">THE JOURNEY</h1>
                     <p class="first_section_text">Come take a walk with us and expore the city of Stockholm.</p>
+                    <div class="to_left_button nav_button"></div>
+                    <div class="to_right_button nav_button"></div>
                 </div>
             </div>
         </div>
@@ -44,7 +41,7 @@
     <section class="second_section">
         <div class="wrapper">
                 <h2 class="second_section_title">STOCKHOLM</h2>
-                <div class="second_section_container">
+                <div class="second_section_flex">
                     <div class="article_second_section">
                         <p class="title_second_section">WNITER</p>
                         <p class="under_article_second_section">Merops pusillus</p>
@@ -57,61 +54,64 @@
                         </p>
                         <a class="more_button" href="#">MORE</a>
                     </div>
-                    <div class="calendar">
-                            <div class="month"> 
-                                    <ul>
-                                    <li class="prev"></li>
-                                    <li class="next"></li>
-                                    <div class="month_name">March 2015</div>                                    </ul>
-                                </div>
-                                
-                                <ul class="weekdays">
-                                    <li>M</li>
-                                    <li>T</li>
-                                    <li>W</li>
-                                    <li>T</li>
-                                    <li>F</li>
-                                    <li>S</li>
-                                    <li>S</li>
-                                </ul>
-                                
-                                <ul class="days"> 
-                                        <li>1</li>
-                                        <li>2</li>
-                                        <li>3</li>
-                                        <li>4</li>
-                                        <li>5</li>
-                                        <li>6</li>
-                                        <li>7</li>
-                                        <li>8</li>
-                                        <li>9</li>
-                                        <li>10</li>
-                                        <li class="holiday">11</li>
-                                        <li>12</li>
-                                        <li>13</li>
-                                        <li>14</li>
-                                        <li>15</li>
-                                        <li>16</li>
-                                        <li>17</li>
-                                        <li>18</li>
-                                        <li>19</li>
-                                        <li>20</li>
-                                        <li>21</li>
-                                        <li>22</li>
-                                        <li>23</li>
-                                        <li><span class="active">24</span></li>
-                                        <li>25</li>
-                                        <li>26</li>
-                                        <li>27</li>
-                                        <li>28</li>
-                                        <li>29</li>
-                                        <li>30</li>
-                                        <li>31</li>
-                                        </ul>
-                </div>        
-                        </ul>
+                    <div class="calendar">   
+                        <table>
+                                <caption class="month_name">March 2015</caption>
+                            <tr>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
+                                <th>S</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td class="holiday">11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>23</td>
+                                <td class="current">24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td colspan="3"></td>
+                            </tr>
+                        </table>  
+                        </div>
+                    </div>
                 </div>
-            </div>
         </div>
     </section>
 
@@ -119,7 +119,7 @@
         <div class="wrapper">
             <div class="third_section_container">
                 <div class="large_l">L</div>
-                <div class=third_article_container>
+                <div class='third_article_container'>
                             <div class="article_third_container">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Aliquam quis euismod quam. Fusce at tincidunt puruss.
@@ -144,7 +144,7 @@
                                     Ut lorem lacus, rutrum in efficitur eget, convallis sed erat.
                                     Phasellus varius enim eget est iaculis pretium. Etiam id 
                                     ante congue, scelerisque tellus id bibendum est.
-                                    </p>
+                                    </p><br>
 
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Aliquam quis euismod quam. Fusce at tincidunt puruss.
@@ -168,7 +168,7 @@
                                     lorem sodales odio, a fermentum ante quam eu purus. we
                                     Cras euismod accumsan egestas. Nulla sit amet dolor leo.
                                     Ut lorem lacus, rutrum in efficitur eget, convallis sed erat.
-                                    Phasellus varius enim eget est iaculis pretium. Etiam id</p>
+                                    Phasellus varius enim eget est iaculis pretium. Etiam id</p><br>
 
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Aliquam quis euismod quam. Fusce at tincidunt puruss.
@@ -209,18 +209,22 @@
                             <div class="under_article_border"></div>
                             <p class="stockholm_article_title_under">Most impressive travel<br>
                                 destination for 2015</p>
-                            <p class="stockholm_article_text"><div class="start">Lorem ipsum</div> 
+                            <div class="stockholm_article_text">
+                            <span class="colortext">Lorem ipsum</span> 
                                 dolor sit amet, sapi aqua<br>
                                 sollicitudin, eu consequatur, liberoma id<br>
                                 nisl, blandit dui. Accumsan iaculis. In<br>
-                                felis et. In mi, at nullam bibendum. At</p>
+                                felis et. In mi, at nullam bibendum. At
+                            </div>
                         </div>
                         <div class="right_part">
-                            <div class="under_right_border"></div>
+                                <div class="under_right_border"></div>
                             <p class="right_part_title">HOW TO EXPAND<br>
                                 INTERNATIONALY</p>
-                            <div class="comments">25</div>
-                            <div class="date">Jan,2015</div>
+                            <div class="righ_part_container">
+                                <div class="comments">25</div>
+                                <div class="date">Jan,2015</div>
+                            </div>
                         </div>
                     </div>
         </div>
@@ -230,8 +234,13 @@
             <div class="footer_container">
                 <h2 class="footer_title">TRAVEL WITH US</h2>
                 <div class="footer_buttons_container">
-                    <a class="facebook_button">FACEBOOK</a>
-                    <a class="twitter_button">TWITTER</a>
+                    <a href="#" class="facebook_button">
+                        FACEBOOK
+                    </a>
+                    <a href="#" class="twitter_button">
+                            <div class="tw_logo"></div>
+                        TWITTER
+                    </a>
                 </div>
                 <p class="footer_copyright">Copyright 2015. Hand made in Sweden by <a href="#" class="kingly_link">KINGLY</a>.</p>
             </div>
