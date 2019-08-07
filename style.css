@@ -153,7 +153,37 @@ font-family: 'Lato', sans-serif; - Lato
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    position: relative;
 }
+.nav_button_calendar{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+.cal_button_left{
+    background: url('./bgs/calendar_arrow_left.png') no-repeat center center;
+    left: 5%;
+}
+
+.cal_button_right{
+    background: url('./bgs/calendar_arrow_right.png') no-repeat center center;
+    right: 5%;
+}
+
+span.current:after{
+    content: '';
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    border: 2px solid #fefeff;
+    border-radius: 50%;
+
+}
+
 .month_name{
     color: #ffffff;
     padding-bottom: 55px;
@@ -173,6 +203,7 @@ td{
     width: 54px;
     height: 54px;
     vertical-align: middle;
+    position: relative;
 }
 td.holiday{
     color: #ffffff;
@@ -300,7 +331,7 @@ td.holiday{
 .date{
     background: url('./bgs/Icon_Clock.png') no-repeat 15% 50%;
     width: 110px;
-    height: 25px;
+    height: 26px;
     text-align: right;
 
 }
@@ -321,7 +352,6 @@ td.holiday{
     margin: 0 auto;
     text-align: left;
     max-width: 350px;
-    align-items: center;
 }
 
 .colortext{
@@ -406,4 +436,166 @@ td.holiday{
     color: #ffffff;
     font-style: normal;
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 780px) {
+
+    .first_section_title{
+        font-size: 50px;   
+    }
+    .first_section_text{
+        font-size: 18px;
+    }
+    .to_right_button{
+        right: 5%;
+    }
+    .to_left_button{
+        left: 5%;
+    }
+    .second_section_flex{
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .first_section_title{
+        font-size: 45px;
+    }
+    .first_section_text {
+        font-size: 16px;
+    }
+    .text_second_section{
+        font-size: 18px;
+    }
+    .stockholm_article_title {
+        font-size: 21px;
+    }
+    .stockholm_article_title_under{
+        font-size: 18px;
+    }
+    .stockholm_article_text{
+        padding: 0 5% 8% 5%;
+        font-size: 16px;
+    }
+    .right_part_title{
+        font-size: 21px;
+        padding-bottom: 10%;
+    }
+    .comments{
+        margin-right: 5%;
+    }
+    .under_right_border{
+        margin-top: 35%;
+    }
+    .facebook_button{
+        padding: 15px 50px;
+        font-size: 14px;
+    }
+    .twitter_button{
+        padding: 15px 50px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 600px) {
+    span.current:after{
+        left: 8px;
+    }
+    .text_second_section {
+        font-size: 16px;
+    }
+    .first_section_title{
+        font-size: 35px;
+    }
+    .first_section_text {
+        font-size: 14px;
+    }
+    .under_article_second_section{
+        font-size: 18px;
+    }
+    .nav_button{
+        width: 40px;
+        height: 40px;
+    }
+    .second_section_title,.fourth_section_title,.fifth_section_title,.footer_title{
+        font-size: 32px;
+    }
+    .footer_copyright{
+        font-size: 14px;
+    }
+    .more_button {
+        width: 60%;
+    }
+    span.current:after {
+        left: 6px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    .nav_button{    
+        border: none;
+    }
+    .to_left_button {
+        left: 1%;
+    }
+    .to_right_button {
+        right: 1%;
+    }
+    .first_section_title {
+        font-size: 30px;
+    }
+    .first_section_text {
+        font-size: 12px;
+    }
+    .header_logo{
+        font-size: 32px;
+    }
+    span.current:after {
+        left: 2px;
+    }
+    .title_second_section{
+        font-size: 18px;
+
+    }
+    .under_article_second_section {
+        font-size: 16px;
+    }
+    .text_second_section {
+        font-size: 15px;
+    }
+    .more_button {
+        font-size: 12px;
+    }
+    .more_button {
+    font-size: 14px;
+    }
+    .second_section_title,.fourth_section_title,.fifth_section_title,.footer_title{
+        font-size: 26px;
+    }
+    .stockholm_article_title {
+        font-size: 18px;
+    }
+    .right_part_title {
+        font-size: 18px;
+    }
+    .stockholm_article_title_under {
+        font-size: 15px;
+    }
+    .facebook_button {
+        padding: 12px 40px;
+        font-size: 12px;
+    }
+    .twitter_button {
+        padding: 12px 40px;
+        font-size: 12px;
+    }
+    .comments {
+        margin-right: 2%;
+    }
+    .stockholm_article_text{
+        font-size: 14px;
+    }
+    
+    
 }
