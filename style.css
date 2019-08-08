@@ -552,6 +552,9 @@ font-family: 'Lato', sans-serif; - Lato
         right: 60%;
         padding: 17px;
     }
+    .month_days_container {
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 510px) {
@@ -618,6 +621,9 @@ font-family: 'Lato', sans-serif; - Lato
     }
     .stockholm_article_text{
         font-size: 14px;
+    }
+    .month_days_container {
+        width: 200px;
     }
     
 }
